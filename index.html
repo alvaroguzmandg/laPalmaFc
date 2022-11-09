@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +26,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/snippet.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.kickoffpages.com/2.1.0/kol.js" id="koljs" data-campaign-id="167654" async></script>
 </head>
 
 <body>
@@ -89,14 +91,79 @@
                 <span class="lp-texto-destacado" data-aos="fade-up" data-aos-duration="3300">
                   La Palma DFC es el primer club de fútbol completamente tokenizado donde los miembros toman las decisiones
               </span>
-                <div class="bt-laPalma lp-black" data-aos="fade-up" data-aos-duration="3100">Ver</div>
+
+                <a href="#section-about" class="bt-cerrar" onclick="verVideo()">
+                    <div class="bt-laPalma lp-black" data-aos="fade-up" data-aos-duration="3100">Ver</div>
+                </a>
             </div>
 
         </section>
 
 
+        <style type="text/css">
+            #videoFabio {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                background-color: black;
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                position: fixed;
+                top: 0;
+                --bs-bg-opacity: 1;
+                background-color: var(--main-black);
+                background-color: rgba(0, 0, 0, 0.95);
+                z-index: 999999;
+                text-align: center;
+                gap: 20px;
+                justify-content: center;
+            }
+            
+            iframe.fabito {
+                width: 900px;
+                height: 500px;
+                margin: 0 auto;
+            }
+            
+            a.bt-bt-cerrar {
+                text-align: center;
+                text-decoration: none;
+            }
+            
+            @media only screen and (max-width: 900px) {
+                iframe.fabito {
+                    width: 90%;
+                    margin: 0 auto;
+                    margin-left: 5%;
+                    height: auto;
+                    min-height: 300px;
+                }
+                #videoFabio {
+                    margin-top: 0px;
+                    margin-bottom: 30px;
+                }
+            }
+        </style>
+
+        <script>
+            function verVideo() {
+                document.getElementById("videoFabio").style.display = "flex";
+            }
+
+            function cerrarVideo() {
+                document.getElementById("videoFabio").style.display = "none";
+            }
+        </script>
+        <div id="videoFabio">
+            <iframe class="fabito" src="https://player.vimeo.com/video/766051160" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <a href="#section-about" class="bt-cerrar" onclick="cerrarVideo()">
+                <div class="bt-laPalma cerrar lp-black" data-aos="fade-up" data-aos-duration="3100">cerrar</div>
+            </a>
+        </div>
+
         <section id="section-nosotros" class="lp-fondoGradient">
-            <div class="contenido-section" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <div class="contenido-section" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                 <span class="lp-titulo lp-light lp-crema">
                     Hasta ahora, las decisiones las tomaban unos pocos.
                 </span>
