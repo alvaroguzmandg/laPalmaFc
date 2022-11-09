@@ -1,0 +1,507 @@
+/* BASE COLORES */
+
+:root {
+    --main-black: #1d1d1b;
+    --main-amarillo: #f7a822;
+    --main-cream: #fffef9;
+    --main-azul: #04539e;
+}
+
+.lp-fondoGradient {
+    background: url(../images/back-laPalma.jpg);
+    background-size: cover;
+}
+
+.lp-amarillo {
+    color: var(--main-amarillo)
+}
+
+.lp-azul {
+    color: var(--main-azul)
+}
+
+.lp-black {
+    color: var(--main-black)
+}
+
+.lp-crema {
+    color: var(--main-cream)
+}
+
+.lp-light {
+    font-weight: 300;
+}
+
+.lp-strong {
+    font-weight: 700;
+}
+
+body {
+    font-family: "Open-sans", sans-serif;
+}
+
+
+/* HEADER SITIO  */
+
+header {
+    background-color: var(--main-black);
+}
+
+.container-fluid {
+    width: 90%;
+}
+
+.icono-menu {
+    width: 100%;
+    height: 100%;
+    max-height: 50px;
+}
+
+.navbar-nav,
+.nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .show>.nav-link {
+    color: var(--main-cream);
+    font-size: 12px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-link:focus,
+.nav-link:hover,
+a.nav-link.active:hover {
+    color: var(--main-amarillo)
+}
+
+.navbar-toggler-icon {
+    color: var(--main-cream)
+}
+
+
+/* FIN HEADER */
+
+
+/* SECCIÓN ENCABEZADO */
+
+#header-sitio {
+    background-image: url(../images/back-laPalma.jpg);
+    background-size: cover;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 70px;
+    height: 100%;
+}
+
+#contenido-header {
+    display: flex;
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px
+}
+
+@media screen and (max-width:900px) {
+    #contenido-header {
+        flex-direction: column;
+        width: 90%;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+#logo-encabezado img {
+    width: 100%;
+}
+
+@media screen and (max-width:900px) {
+    #logo-encabezado img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    #logo-encabezado img {
+        max-width: 200px;
+    }
+}
+
+.encabezado-header .lp-copete {
+    font-size: 16px;
+    display: block;
+}
+
+.encabezado-header .lp-titulo-sitio {
+    font-size: 60px;
+    line-height: 50px;
+    display: block;
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .encabezado-header .lp-titulo-sitio {
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        padding-top: 0px;
+    }
+}
+
+.encabezado-header .lp-subtitulo-sitio {
+    font-size: 30px;
+    display: block;
+    font-weight: 300;
+    font-style: italic;
+    border-bottom: 3px solid var(--main-cream);
+}
+
+@media screen and (max-width:600px) {
+    .encabezado-header .lp-subtitulo-sitio {
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: none;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .encabezado-header .lp-subtitulo-sitio {
+        font-size: 16px;
+    }
+}
+
+.encabezado-header .lp-bajadatitulo-sitio {
+    font-size: 16px;
+    display: block;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .encabezado-header .lp-bajadatitulo-sitio {
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .encabezado-header .lp-bajadatitulo-sitio {
+        width: 60%;
+        margin: 15px auto 0px;
+    }
+}
+
+
+/* GENERAL SECTION */
+
+.contenido-section {
+    display: block;
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.lp-aboutUs {
+    background-image: url(../images/back-section2.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width:600px) {
+    .lp-aboutUs {
+        background-size: auto 100%;
+        background-position: center;
+    }
+}
+
+.lp-titulo {
+    font-size: 25px;
+    line-height: 45px;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:900px) {
+    .lp-titulo {
+        width: 90%;
+        font-size: 25px;
+    }
+}
+
+.lp-texto-destacado {
+    width: 50%;
+    max-width: 480px;
+    margin: 0 auto;
+    display: block;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:600px) {
+    .lp-texto-destacado {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+.bt-laPalma {
+    border-radius: 10px;
+    background-color: var(--main-amarillo);
+    padding: 10px;
+    font-size: 15px;
+    width: 100px;
+    display: block;
+}
+
+#section-nosotros .contenido-section .lp-titulo {
+    font-size: 20px;
+}
+
+#section-nosotros .contenido-section span {
+    display: block;
+}
+
+#section-nosotros .contenido-section .lp-texto-destacado {
+    width: 100%;
+    font-size: 35px;
+    max-width: 100%;
+}
+
+#section-nosotros .contenido-section .lp-texto-destacado .lp-light {
+    font-size: 25px;
+}
+
+#section-info {
+    background-image: url(../images/backLapalma-cel.png);
+    background-size: cover;
+}
+
+#section-info .contenido-section .contenido-section-bloque .lp-texto-destacado {
+    width: 70%;
+    max-width: 600px;
+    line-height: 50px;
+}
+
+#section-info .contenido-section {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+#section-faqs {
+    background-image: url(../images/back-faqs.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.titulo-accordion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#section-faqs .contenido-section .lp-titulo.lp-light {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.accordion-button:not(.collapsed),
+.accordion-button.collapsed {
+    border: 1px solid var(--main-amarillo);
+    color: var(--main-cream);
+}
+
+button.accordion-button {
+    border: 1px solid var(--main-amarillo);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--main-cream);
+}
+
+.accordion-button.collapsed::after {
+    content: '-';
+    margin: 0 auto;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: '+';
+    margin: 0 auto;
+}
+
+button.accordion-button.collapsed::after {
+    content: '+';
+    margin: 0 auto;
+}
+
+.accordion-body {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+
+.accordion {
+    --bs-accordion-bg: rgba(255, 255, 255, 0)
+}
+
+#section-suscribite,
+#section-universo {
+    background-image: url(../images/back-laPalma-dark.png);
+    background-size: cover;
+}
+
+#section-suscribite .contenido-section .lp-titulo {
+    letter-spacing: 8px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.contenedor-membresia {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.contenedor-membresia-bloque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(247, 168, 35, 0.3);
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contenedor-membresia-bloque:hover {
+    background-color: rgba(247, 168, 35, 0.3);
+    ;
+}
+
+.contenedor-membresia a {
+    text-decoration: none;
+}
+
+.contenedor-membresia a:hover {
+    color: var(--main-amarillo);
+}
+
+.contenedor-membresia-bloque img {
+    width: 80%;
+}
+
+.titulo-membresia span {
+    margin-top: 15px;
+    display: block;
+    font-size: 14px;
+    line-height: 10px;
+}
+
+.titulo-membresia {
+    font-size: 24px;
+}
+
+.bt-membresia {
+    border: 1px solid var(--main-amarillo);
+    padding: 5px 10px;
+    display: block;
+    font-size: 12px;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#section-registro {
+    background-color: var(--main-amarillo);
+}
+
+#section-registro .contenido-section {
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+#section-universo .contenido-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#section-universo .contenido-section .lp-titulo {
+    letter-spacing: 8px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.contenedor-botones-universo {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.bt-universo {
+    border: 1px solid var(--main-amarillo);
+    padding: 10px 10px;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 5px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.bt-universo:hover {
+    background-color: var(--main-amarillo);
+    color: var(--main-black)
+}
+
+#section-universo .contenido-section .lp-titulo.proximamente {
+    letter-spacing: 10px;
+    font-size: 22px;
+    display: block;
+    margin-top: 80px;
+}
+
+#section-universo .contenido-section .lp-titulo.proximamente span {
+    display: block;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+footer {
+    background-color: var(--main-black);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 10px;
+}

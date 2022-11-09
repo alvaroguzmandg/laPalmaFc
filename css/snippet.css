@@ -1,0 +1,131 @@
+/* Rules Popup snippet */
+
+#basicLightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    --bs-bg-opacity: 1;
+    background-color: var(--main-black);
+    background-color: rgba(29, 29, 29, 1);
+    z-index: 999999;
+}
+
+.basicLightbox {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .8);
+    opacity: .01;
+    transition: opacity .4s ease;
+    z-index: 9999;
+    will-change: opacity
+}
+
+.basicLightbox--visible {
+    opacity: 1
+}
+
+.basicLightbox__placeholder {
+    max-width: 100%;
+    /* transform: scale(.9); */
+    transition: transform .4s ease;
+    z-index: 1;
+    will-change: transform
+}
+
+.basicLightbox__placeholder>iframe:first-child:last-child,
+.basicLightbox__placeholder>img:first-child:last-child,
+.basicLightbox__placeholder>video:first-child:last-child {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 95%;
+    max-height: 95%
+}
+
+.basicLightbox__placeholder>iframe:first-child:last-child,
+.basicLightbox__placeholder>video:first-child:last-child {
+    pointer-events: auto
+}
+
+.basicLightbox__placeholder>img:first-child:last-child,
+.basicLightbox__placeholder>video:first-child:last-child {
+    width: auto;
+    height: auto
+}
+
+.basicLightbox--iframe .basicLightbox__placeholder,
+.basicLightbox--img .basicLightbox__placeholder,
+.basicLightbox--video .basicLightbox__placeholder {
+    width: 100%;
+    height: 100%;
+    pointer-events: none
+}
+
+.basicLightbox--visible .basicLightbox__placeholder {
+    transform: scale(1)
+}
+
+.basicLightbox__placeholder {
+    overflow: hidden;
+    color: white;
+}
+
+.kol-pop-up-wrapper {
+    height: 100%;
+    height: 100%;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.kol-pop-up-dialog {
+    height: calc(100%);
+    overflow: scroll;
+}
+
+.kol-pop-up-body {
+    overflow: scroll;
+    height: calc(100% - 40px);
+    color: white !important;
+}
+
+.kol-pop-up-header .close {
+    color: white;
+    float: right;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1;
+    opacity: 1;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.kol-pop-up-content {
+    height: 100%;
+    max-width: 960px;
+}
+
+.basicLightbox__placeholder {
+    height: 100%;
+    padding: 20px;
+    width: 100%;
+}
+
+.kol-pop-up-title,
+.kol-pop-up-body p {
+    color: white;
+}
