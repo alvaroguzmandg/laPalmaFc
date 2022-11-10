@@ -249,6 +249,7 @@ a.nav-link.active:hover {
     margin: 0 auto;
     width: 50%;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 @media screen and (max-width:900px) {
@@ -303,6 +304,8 @@ a.nav-link.active:hover {
     font-size: 15px;
     width: 100px;
     display: block;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 #section-nosotros .contenido-section .lp-titulo {
@@ -363,7 +366,16 @@ a.nav-link.active:hover {
 #section-info .contenido-section {
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 40px;
+}
+
+#section-info .contenido-section .lp-titulo.lp-strong {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+#section-info .contenido-section .contenido-section-bloque {
+    margin-bottom: 50px;
 }
 
 @media screen and (max-width:600px) {
@@ -398,6 +410,12 @@ a.nav-link.active:hover {
 #section-faqs .contenido-section .lp-titulo.lp-light {
     font-weight: 300;
     font-style: italic;
+}
+
+#bloque-preguntas {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .accordion-button:not(.collapsed),
@@ -435,8 +453,8 @@ button.accordion-button.collapsed::after {
 .accordion-body {
     width: 80%;
     margin: 0 auto;
-    max-width: 700px;
-    font-size: 18px;
+    max-width: 900px;
+    font-size: 17px;
     line-height: 40px;
     letter-spacing: 1px;
 }
@@ -545,7 +563,7 @@ button.accordion-button.collapsed::after {
 /* Registro */
 
 #section-registro {
-    background-color: var(--main-amarillo);
+    /* background-color: var(--main-amarillo); */
 }
 
 #section-registro .contenido-section {
@@ -576,7 +594,7 @@ button.accordion-button.collapsed::after {
 
 #section-registro .contenido-section .titulo-registro {
     box-sizing: border-box;
-    border-right: 1px solid black;
+    border-right: 1px solid white;
     font-size: 25px;
     line-height: 30px;
     width: 35%;
@@ -617,18 +635,18 @@ button.accordion-button.collapsed::after {
 }
 
 #section-registro .contenido-section #bloque-registro #contactForm .inputBox.submit-box button {
-    border: 1px;
-    background-color: var(--main-black);
-    color: var(--main-cream);
+    background-color: var(--main-amarillo);
+    color: var(--main-black);
     padding: 6px 10px;
     box-sizing: border-box;
     border-radius: 8px;
     font-size: 12px;
+    border: 0px;
 }
 
 #section-registro .contenido-section #bloque-registro #contactForm .inputBox.submit-box button:hover {
-    border: 1px solid var(--main-cream);
-    color: var(--main-amarillo);
+    background-color: var(--main-black);
+    color: var(--main-cream);
     box-sizing: border-box;
 }
 
@@ -716,6 +734,12 @@ button.accordion-button.collapsed::after {
     gap: 30px;
     margin: 0 auto;
     justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.contenido-section-universo {
+    padding-top: 100px;
 }
 
 .bt-universo {
@@ -734,14 +758,14 @@ button.accordion-button.collapsed::after {
     color: var(--main-black)
 }
 
-#section-universo .contenido-section .lp-titulo.proximamente {
+#section-suscribite .contenido-section-universo .lp-titulo.proximamente {
     letter-spacing: 10px;
     font-size: 22px;
     display: block;
     margin-top: 80px;
 }
 
-#section-universo .contenido-section .lp-titulo.proximamente span {
+#section-suscribite .contenido-section-universo .lp-titulo.proximamente span {
     display: block;
     font-weight: 300;
     font-size: 20px;
@@ -752,7 +776,7 @@ button.accordion-button.collapsed::after {
     .contenedor-botones-universo {
         width: 90%;
     }
-    #section-universo .contenido-section .lp-titulo.proximamente {
+    #section-suscribite .contenido-section-universo .lp-titulo.proximamente {
         letter-spacing: 3px;
     }
 }
