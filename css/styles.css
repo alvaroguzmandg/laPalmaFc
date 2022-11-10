@@ -742,7 +742,8 @@ button.accordion-button.collapsed::after {
     padding-top: 100px;
 }
 
-.bt-universo {
+.bt-universo,
+.bt-proximamente {
     border: 1px solid var(--main-amarillo);
     padding: 10px 10px;
     display: block;
@@ -751,6 +752,12 @@ button.accordion-button.collapsed::after {
     border-radius: 5px;
     text-decoration: none;
     letter-spacing: 1px;
+}
+
+.bt-proximamente {
+    border: 1px solid var(--main-amarillo);
+    color: var(--main-cream)!important;
+    font-size: 14px;
 }
 
 .bt-universo:hover {
@@ -768,8 +775,11 @@ button.accordion-button.collapsed::after {
 #section-suscribite .contenido-section-universo .lp-titulo.proximamente span {
     display: block;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 40px;
+    font-size: 14px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width:600px) {
