@@ -17,7 +17,6 @@
     <title>La Palma - Unión Deportiva Descentralizada</title>
 
 
-
     <!-- BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
@@ -42,7 +41,7 @@
                     <img src="./images/logo-laPalma.svg" class="icono-menu">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -86,11 +85,11 @@
         <section id="section-about">
             <div class="contenido-section lp-aboutUs lp-black">
                 <span class="lp-titulo lp-strong" data-aos="fade-up" data-aos-duration="3500">
-                La pasión por el futbol nos conecta. <br>La descentralización también.
-              </span>
+                    La pasión por el futbol nos conecta. <br>La descentralización también.
+                </span>
                 <span class="lp-texto-destacado" data-aos="fade-up" data-aos-duration="3300">
-                  La Palma DFC es el primer club de fútbol completamente tokenizado donde los miembros toman las decisiones
-              </span>
+                    La Palma DFC es el primer club de fútbol completamente tokenizado donde los miembros toman las decisiones
+                </span>
 
                 <a href="#section-about" class="bt-cerrar" onclick="verVideo()">
                     <div class="bt-laPalma lp-black" data-aos="fade-up" data-aos-duration="3100">Ver</div>
@@ -99,66 +98,10 @@
 
         </section>
 
-
-        <style type="text/css">
-            #videoFabio {
-                width: 100%;
-                height: 100%;
-                margin: 0 auto;
-                background-color: black;
-                display: none;
-                flex-direction: column;
-                align-items: center;
-                position: fixed;
-                top: 0;
-                --bs-bg-opacity: 1;
-                background-color: var(--main-black);
-                background-color: rgba(0, 0, 0, 0.95);
-                z-index: 999999;
-                text-align: center;
-                gap: 20px;
-                justify-content: center;
-            }
-            
-            iframe.fabito {
-                width: 900px;
-                height: 500px;
-                margin: 0 auto;
-            }
-            
-            a.bt-bt-cerrar {
-                text-align: center;
-                text-decoration: none;
-            }
-            
-            @media only screen and (max-width: 900px) {
-                iframe.fabito {
-                    width: 90%;
-                    margin: 0 auto;
-                    margin-left: 5%;
-                    height: auto;
-                    min-height: 300px;
-                }
-                #videoFabio {
-                    margin-top: 0px;
-                    margin-bottom: 30px;
-                }
-            }
-        </style>
-
-        <script>
-            function verVideo() {
-                document.getElementById("videoFabio").style.display = "flex";
-            }
-
-            function cerrarVideo() {
-                document.getElementById("videoFabio").style.display = "none";
-            }
-        </script>
         <div id="videoFabio">
             <iframe class="fabito" src="https://player.vimeo.com/video/766051160" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
             <a href="#section-about" class="bt-cerrar" onclick="cerrarVideo()">
-                <div class="bt-laPalma cerrar lp-black" data-aos="fade-up" data-aos-duration="3100">cerrar</div>
+                <div class="bt-laPalma cerrar lp-black" data-aos="fade-up" data-aos-duration="3100">x</div>
             </a>
         </div>
 
@@ -261,10 +204,21 @@
         <section id="section-registro">
             <div class="contenido-section">
                 <div id="bloque-registro">
-                    <div class="titulo-registro">
-                        Una Pasión sin fronteras Físicas , Tecnológicas y Creativas
+                    <div class="titulo-registro lp-strong">
+                        Una Pasión sin fronteras
+                        <span class="lp-light">Físicas, Tecnológicas y Creativas</span>
                     </div>
-                    <div id="contenedor-registro"></div>
+                    <form action="" id="contactForm">
+                        <div class="inputBox email-box">
+                            <input type="email" id="emailid" placeholder="Ingresá tu correo electrónico">
+                        </div>
+                        <div class="inputBox submit-box">
+                            <button type="submit">Hacé tu primer gol</button>
+                        </div>
+                    </form>
+                    <div id="registroGracias" class="lp-strong">
+                        ¡GRACIAS POR REGISTRARTE A NUESTRO NEWSLETTER!
+                    </div>
                 </div>
             </div>
         </section>
@@ -306,6 +260,8 @@
             <span class="kol-font-px lp-crema">&nbsp;Waitlist Rules - © 2022</span>
         </a>
     </footer>
+
+
 
     <div id="basicLightbox" class="basicLightbox__placeholder" role="dialog">
 
@@ -424,22 +380,16 @@
         </div>
     </div>
 
-    <script>
-        function verLightbox() {
-            event.preventDefault()
-            document.getElementById("basicLightbox").style.display = "block";
 
-        }
-
-        function ocultarLightbox() {
-            document.getElementById("basicLightbox").style.display = "none";
-        }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/news.js"></script>
+
 </body>
 
 </html>

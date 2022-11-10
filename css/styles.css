@@ -541,6 +541,9 @@ button.accordion-button.collapsed::after {
     }
 }
 
+
+/* Registro */
+
 #section-registro {
     background-color: var(--main-amarillo);
 }
@@ -549,6 +552,150 @@ button.accordion-button.collapsed::after {
     padding-top: 50px;
     padding-bottom: 40px;
 }
+
+#section-registro .contenido-section #bloque-registro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1200px) {
+    #section-registro .contenido-section #bloque-registro {
+        max-width: 990px;
+    }
+}
+
+#section-registro .contenido-section .bloque-registro {
+    display: flex;
+    align-items: center;
+}
+
+#section-registro .contenido-section .titulo-registro {
+    box-sizing: border-box;
+    border-right: 1px solid black;
+    font-size: 25px;
+    line-height: 30px;
+    width: 35%;
+}
+
+#section-registro .contenido-section .titulo-registro span {
+    display: block;
+    font-size: 19px;
+    line-height: 19px;
+}
+
+#section-registro .contenido-section #bloque-registro #contactForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 65%;
+    gap: 3%;
+}
+
+#section-registro .contenido-section #bloque-registro #contactForm .inputBox.email-box {
+    width: 70%;
+}
+
+#section-registro .contenido-section #bloque-registro #contactForm .inputBox.submit-box {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#section-registro .contenido-section #bloque-registro #contactForm .inputBox.email-box input {
+    width: 100%;
+    border: 0;
+    padding: 4px 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+#section-registro .contenido-section #bloque-registro #contactForm .inputBox.submit-box button {
+    border: 1px;
+    background-color: var(--main-black);
+    color: var(--main-cream);
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+#section-registro .contenido-section #bloque-registro #contactForm .inputBox.submit-box button:hover {
+    border: 1px solid var(--main-cream);
+    color: var(--main-amarillo);
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:1080px) {
+    #section-registro .contenido-section .titulo-registro {
+        width: 40%;
+    }
+    #section-registro .contenido-section #bloque-registro #contactForm {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #section-registro .contenido-section #bloque-registro {
+        flex-direction: column;
+        align-items: center;
+    }
+    #section-registro .contenido-section .titulo-registro {
+        border: 0px;
+    }
+    #section-registro .contenido-section #bloque-registro #contactForm {
+        flex-direction: column;
+        gap: 20px
+    }
+    #section-registro .contenido-section .titulo-registro {
+        width: 100%;
+    }
+    #section-registro .contenido-section #bloque-registro #contactForm {
+        width: 90%;
+    }
+    #section-registro .contenido-section #bloque-registro #contactForm .inputBox.email-box {
+        width: 100%;
+        text-align: center;
+    }
+    #section-registro .contenido-section #bloque-registro #contactForm .inputBox.submit-box {
+        width: 150px;
+        justify-content: center;
+    }
+    #section-registro .contenido-section #bloque-registro #contactForm .inputBox.email-box input {
+        text-align: center;
+    }
+    #section-registro .contenido-section #bloque-registro #contactForm .inputBox.submit-box button {
+        padding: 10px;
+    }
+}
+
+#registroGracias {
+    display: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: var(--main-cream);
+    background-color: var(--main-black);
+    width: 80%;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+@media screen and (max-width:600px) {
+    #registroGracias {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+
+/* Universo */
 
 #section-universo .contenido-section {
     padding-top: 100px;
@@ -625,4 +772,51 @@ footer {
 footer a {
     text-decoration: none;
     font-size: 10px;
+}
+
+
+/* VIDEO */
+
+#videoFabio {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: black;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    --bs-bg-opacity: 1;
+    background-color: var(--main-black);
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 999999;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+iframe.fabito {
+    width: 900px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+a.bt-bt-cerrar {
+    text-align: center;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+    iframe.fabito {
+        width: 90%;
+        margin: 0 auto;
+        margin-left: 5%;
+        height: auto;
+        min-height: 300px;
+    }
+    #videoFabio {
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
 }
